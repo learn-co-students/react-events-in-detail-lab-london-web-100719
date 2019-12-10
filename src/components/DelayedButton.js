@@ -6,7 +6,7 @@ class DelayButton extends Component {
     this.state = {};
   }
   handleButton = event => {
-    event.persist()
+    event.persist();
     setTimeout(() => {
       this.props.onDelayedClick(event);
     }, this.props.delay);
